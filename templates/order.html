@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_order.css') }}">
+        <title>{{name}} - Order details</title>
+    </head>
+    <body>
+        <div class = 'order-details'>
+           <h2>{{order.name}}:</h2>
+
+           <h4>Order Quantity:</h4>
+   
+           <p> {{order.quantity}} </p>
+           <p>{{order.description}}</p>
+        </div>
+        
+    </body>
+</html>

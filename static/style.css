@@ -1,0 +1,28 @@
+.order{
+    padding: 32px;
+    grid-template: auto;
+    background-color: skyblue;
+    grid-area: order1;
+    
+}
+.order1{
+    padding: 32px;
+    grid-template: auto;
+    background-color: skyblue;
+    grid-area: order2;
+    
+}
+.order2{
+    padding: 32px;
+    grid-template: auto;
+    background-color: skyblue;
+    grid-area:order3;
+    
+}
+body>{
+    display: grid;
+    grid-template-rows: 
+    "order1"
+    "order2"
+    "order3";
+}
