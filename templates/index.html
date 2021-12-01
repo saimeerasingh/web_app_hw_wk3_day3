@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>{{name}} - My Customers</title>
+    </head>
+    <body>
+        <h1>My Customers</h1>
+        <div id = 'Order'>
+            {% for customer in customers %}
+
+            <h2>{{customer.name}}:</h2>
+
+            <h4>Order Quantity:</h4>
+    
+            <p> {{customer.quantity}} </p>
+            <p>{{customer.description}}</p>
+          
+        </div>
+            {% endfor %}
+    </body>
+</html>
