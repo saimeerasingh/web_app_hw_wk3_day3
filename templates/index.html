@@ -2,15 +2,21 @@
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-        <title>{{name}} - My Customers</title>
+        <title>{{name}} - Jolly Lollies</title>
     </head>
+    <header>
+        <div class = 'shop-name'>
+            <h1>Scoopy Doo</h1>
+        </div>
+    </header>
     <body>
-        <h1>My Customers</h1>  
+        <h2>Ice Cream Orders</h2>  
          <div class = 'order'>
              {% for customer in customers %}
             <a href="/orders/{{customers.index(customer)}}"><h2>{{customer.name}}:</h2></a>
          </div>
          {% endfor %}
+
     </body>    
 
            
